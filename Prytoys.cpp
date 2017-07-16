@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a,b;
+cin>>a>>b;
+ string v[60];
+ v[1] = "one";
+ v[2] = "two";
+ v[3] = "three";
+ v[4] = "four";
+ v[5] = "five";
+ v[6] = "six";
+ v[7] = "seven";
+ v[8] = "eight";
+ v[9] = "nine";
+ v[10] = "ten";
+ v[11] = "eleven";
+ v[12] = "twelve";
+ v[13] = "thirteen";
+ v[14] = "fourteen";
+ v[15] = "fifteen";
+ v[16] = "sixteen";
+ v[17] = "seventeen";
+ v[18] = "eighteen";
+ v[19] = "nineteen";
+ v[20] = "twenty";
+ v[30] = "thirty";
+ v[40] = "forty";
+ v[50] = "fifty";
+if(b == 0) cout<<v[a]<<" o' clock";
+else if (b==1) cout<<v[b]<<" minute past "<<v[a];
+else if(b==15) cout<<"quarter past "<<v[a];
+else if(b>0 and b<21) cout<<v[b]<<" minutes past "<<v[a];
+else if(b>20 and b<30) cout<<"twenty "<<v[b-20]<<" minutes past "<<v[a];
+else if(b==30) cout<<"half past "<<v[a];
+else if(b>30 and b<40) cout<<"twenty "<<v[40-b]<<" minutes to "<<v[a+1];
+else if(b>39 and b<45) cout<<v[60-b]<<" minutes to "<<v[a+1];
+else if(b==45) cout<<"quarter to "<<v[a+1];
+else if(b>45) cout<<v[60-b]<<" minutes to "<<v[a+1];
+return 0;
+}
